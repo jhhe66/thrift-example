@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  rpc-server:
+    build: ./rpc-server
+    ports:
+      - "8200:8200"
+  rpc-client:
+    build: ./rpc-client
+    depends_on:
+      - rpc-server
