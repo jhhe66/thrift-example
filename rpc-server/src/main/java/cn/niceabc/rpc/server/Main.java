@@ -25,7 +25,7 @@ public class Main {
                     new RPCNetAuthService.Processor<RPCNetAuthService.Iface>(new AuthServiceImpl())
             );
 //         TSimpleServer server = new TSimpleServer(new Args(t).processor(processor));
-            System.out.println("the serveris started and is listening at 9090...");
+            System.out.println("the serveris started and is listening at 8200...");
             server.serve();
         } catch (TTransportException e) {
             e.printStackTrace();
